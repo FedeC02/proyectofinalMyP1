@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <title>PENTOS - Cervecería Artesanal</title>
+  <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+</head>
+<body>
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Inicio</a>
+    <a href="menu.html">Menú</a>
+    <a href="reservas.html">Reservas</a>
+    <a href="mapa.html">Mapa</a>
+    <a href="contacto.html">Contáctanos</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+
+    <div class="content-overlay">
+      <img src="./assets/bar.jpg" alt="PENTOS CERVECERIA ARTESANAL" class="main-image">
+      <div class="content-text">
+        <h2>Bienvenidos a PENTOS, una cervecería distinta</h2>
+      </div>
+    </div>
+    <div class="additional-content">
+      <div class="image-and-text">
+        <div class="image-container">
+          <img src="./assets/plato.jpg" alt="plato" class="additional-image-small">
+        </div>
+        <div class="text-container">
+          <h3>CHICKEN MVP</h3>
+          <p>Proba el combo estrella de nuestro menú!</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="review-section">
+      <h2>Reseñas: 4.25 / 5.0</h2>
+      <div class="review">
+        <div class="user-info">
+          <p class="user-name">Tomas Rodriguez</p>
+        </div>
+        <div class="user-review">
+          <p class="user-rating">⭐️⭐️⭐️⭐️⭐️</p>
+          <p class="user-comment">Se transformó en mi cervecería preferida, la comida, la atención y especialmente las cervezas son espectaculares.</p>
+        </div>
+      </div>
+      <div class="review">
+        <div class="user-info">
+          <p class="user-name">Marcela Perez</p>
+        </div>
+        <div class="user-review">
+          <p class="user-rating">⭐️⭐️⭐️⭐️</p>
+          <p class="user-comment">Buena comida y ambiente agradable. Recomiendo probar las cervezas "Amber Lager" y "Scottish".</p>
+        </div>
+      </div>
+      <div class="review">
+        <div class="user-info">
+          <p class="user-name">Juana Lopez</p>
+        </div>
+        <div class="user-review"> 
+          <p class="user-rating">⭐️⭐️⭐️⭐️</p>
+          <p class="user-comment">Me encantó la variedad de cervezas, todas muy ricas. La hamburguesa Chicken MVP también muy recomendable.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <p>© 2023 PENTOS - Cervecería Artesanal. Todos los derechos reservados.</p>
+  </footer>  
+</body>
+</html>

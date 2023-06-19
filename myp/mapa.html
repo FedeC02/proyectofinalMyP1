@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <title>PENTOS - Mapas</title>
+  <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+</head>
+<body>
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Inicio</a>
+    <a href="menu.html">Menú</a>
+    <a href="reservas.html">Reservas</a>
+    <a href="mapa.html">Mapa</a>
+    <a href="contacto.html">Contáctanos</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+
+  <div class="container-mapa">
+    <h2>Encontrá tu PENTOS más cercano</h2>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13141.014665068209!2d-58.4576929!3d-34.5724475!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb52c59146837%3A0xfc1108fa81829740!2sPentos%20Colegiales!5e0!3m2!1ses-419!2sar!4v1686501227405!5m2!1ses-419!2sar" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+  <footer class="footer">
+    <p>© 2023 PENTOS - Cervecería Artesanal. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

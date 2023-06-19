@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <title>PENTOS - Contáctanos</title>
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+<body>
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Inicio</a>
+    <a href="menu.html">Menú</a>
+    <a href="reservas.html">Reservas</a>
+    <a href="mapa.html">Mapa</a>
+    <a href="contacto.html">Contáctanos</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+
+  <div class="container-contacto">
+    <h2>Deja tu consulta y serás contactado en breve</h2>
+    <form action="confirmacion.html" method="POST">
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Dirección de correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+    <div class="redes-sociales">
+      <h3>También contáctanos en:</h3>
+      <ul>
+        <li><a href="https://www.facebook.com/PentosCerveceria/?locale=es_LA" target="_blank"><img src="assets/facebook.png" alt="Pentos Cervecería"></a></li>
+        <li><a href="https://www.instagram.com/pentos.bar/?hl=es" target="_blank"><img src="assets/instagram.png" alt="@pentos.bar"></a></li>
+        <li><a href="https://api.whatsapp.com/send/?phone=541127564692&text&type=phone_number&app_absent=0" target="_blank"><img src="assets/wpp.png" alt="WhatsApp"></a></li>
+      </ul>
+    </div>
+  </div>
+  <footer class="footer">
+    <p>© 2023 PENTOS - Cervecería Artesanal. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
